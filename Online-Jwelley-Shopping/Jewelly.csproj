@@ -88,8 +88,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Image\Home\bgcrown.jpg" />
+    <Content Include="Content\Css\DetailsNew.css" />
     <Content Include="Content\Css\Home_contact.css" />
+    <Content Include="Content\Css\News.css" />
     <Content Include="Content\Css\Style.css" />
     <Content Include="Content\Image\Home\bgdiamond.jpg" />
     <Content Include="Content\Image\Home\Bracelets.jpg" />
@@ -102,12 +103,41 @@
     <Content Include="Content\Image\Home\RingDiamond.jpg" />
     <Content Include="Content\Image\Home\Yash_Earrings.jpg" />
     <Content Include="Content\Image\Layout\logo-header.png" />
+    <Content Include="Content\Image\News\bquants.jpg" />
+    <Content Include="Content\Image\News\bquants1.jpg" />
+    <Content Include="Content\Image\News\bquants2.jpg" />
+    <Content Include="Content\Image\News\bquantsbg.jpg" />
+    <Content Include="Content\Image\News\kimcuonghongbg.jpg" />
+    <Content Include="Content\Image\News\kimcuonghongtrong.jpg" />
+    <Content Include="Content\Image\News\kimcuonghongtrong1.jpg" />
+    <Content Include="Content\Image\News\kimcuonghongtrong2.jpg" />
+    <Content Include="Content\Image\News\kimcuongmau4c.jpg" />
+    <Content Include="Content\Image\News\kimcuongmaubg.jpg" />
+    <Content Include="Content\Image\News\kimcuongmauden.jpg" />
+    <Content Include="Content\Image\News\kimcuongmaulá.jpg" />
+    <Content Include="Content\Image\News\kimcuongmauxanh.jpg" />
+    <Content Include="Content\Image\News\kimcuongmauxanh1.jpg" />
+    <Content Include="Content\Image\News\ngoctraibg.jpg" />
+    <Content Include="Content\Image\News\ngoctraitrong.jpg" />
+    <Content Include="Content\Image\News\ngoctraitrong1.jpg" />
+    <Content Include="Content\Image\News\ngoctraitrong2.jpg" />
+    <Content Include="Content\Image\News\ptn.jpg" />
+    <Content Include="Content\Image\News\ptn1.jpg" />
+    <Content Include="Content\Image\News\ptn2.jpg" />
+    <Content Include="Content\Image\News\ptn3.jpg" />
+    <Content Include="Content\Image\News\ptnbg.jpg" />
+    <Content Include="Content\Image\News\ringbg.jpg" />
+    <Content Include="Content\Image\News\ringruler.jpg" />
+    <Content Include="Content\Image\News\rings.jpg" />
+    <Content Include="Content\Image\News\ringsize.jpg" />
+    <Content Include="Content\Image\News\ringsizeruler.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -118,6 +148,13 @@
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\New\Details.cshtml" />
+    <Content Include="Views\New\SizeRing.cshtml" />
+    <Content Include="Views\New\Pearl.cshtml" />
+    <Content Include="Views\New\Lab.cshtml" />
+    <Content Include="Views\New\PinkDia.cshtml" />
+    <Content Include="Views\New\ColorDia.cshtml" />
+    <Content Include="Views\New\Preserve.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
