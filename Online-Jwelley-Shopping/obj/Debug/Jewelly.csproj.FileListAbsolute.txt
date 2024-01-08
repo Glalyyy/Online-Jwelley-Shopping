@@ -142,3 +142,7 @@ D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\obj\Debug\Jewelly.csproj.Core
 D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\obj\Debug\Jewelly.csproj.CopyComplete
 D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\obj\Debug\Jewelly.dll
 D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\obj\Debug\Jewelly.pdb
+D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\bin\EntityFramework.dll
+D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\bin\EntityFramework.SqlServer.dll
+D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\bin\EntityFramework.xml
+D:\Online-Jwelley-Shopping\Online-Jwelley-Shopping\bin\EntityFramework.SqlServer.xml

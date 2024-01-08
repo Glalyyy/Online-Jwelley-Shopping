@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<div class="container-fluid editdeconproadd">
+        <h1 class="_goldh1">Add New StoneMst</h1>
+
+        <form action="/Admin/StoneMst/Create" method="post"><br />
+
+            @Html.AntiForgeryToken()
+
+            <div class="form_product_add">
+
+
+                <table class="table _gold">
+                   
+                    <tr>
+                        <th>Stone_Gm: </th>
+                        <th><input type="text" class="form-control" name="Stone_Gm" placeholder="" /></th>
+                    </tr>
+                    <tr>
+                        <th>Stone_Pcs: </th>
+                        <th><input type="text" class="form-control" name="Stone_Pcs" placeholder="" /></th>
+                    </tr>
+                    <tr>
+                        <th>Stone_Crt: </th>
+                        <th><input type="text" class="form-control" name="Stone_Crt" placeholder="" /></th>
+                    </tr>
+                    <tr>
+                        <th>Stone_Rate</th>
+                        <th><input type="text" class="form-control" name="Stone_Rate" placeholder="" /></th>
+                    </tr>
+                    <tr>
+                        <th>Stone_Amt</th>
+                        <th><input type="text" class="form-control" name="Stone_Amt" placeholder="" /></th>
+                    </tr>
+                    <tr>
+                        <th>Style_Code:</th>
+                        <th><input type="text" class="form-control" name="Style_Code" placeholder="" /></th>
+                    </tr>
+                    <tr>
+                        <th>StoneQlty_ID:</th>
+                        <th>
+                            <select class="form-control" name="StoneQlty_ID">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <input type="submit" class="btn btn-light" name="Add" />
+                        </th>
+                    </tr>
+                </table>
+            </div>
+         </form>
+    </div>

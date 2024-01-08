@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<div class="container-fluid editdeconproadd">
+    <h2 class="_goldh1">Add New ProdMst</h2>
+
+    <form action="/Admin/GoldKrtMst/Create" method="post">
+        <br />
+        @Html.AntiForgeryToken()
+
+        <div class="form_product_add">
+            <table class="table _gold">
+                <tr>
+                    <th>Gold_Crt: </th>
+                    <th><input type="text" class="form-control" name="Gold_Crt" placeholder="" /></th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="submit" class="btn btn-light" name="Add" />
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>

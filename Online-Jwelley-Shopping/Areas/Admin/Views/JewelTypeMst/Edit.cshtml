@@ -1,0 +1,26 @@
+﻿@model Jewelly.Models.JewelTypeMst
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h1 class="_goldh1">Edit Jewel</h1>
+
+<form action="/Admin/JewelTypeMst/Edit/@Model.ID" method="post">
+    <br />
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="row">
+        <div class="col-md-6">
+            <label for="JewelleryType">Jewellery Type</label>
+            <input type="text"
+                   class="form-control"
+                   id="JewelleryType"
+                   name="Jewellery_Type"
+                   placeholder="JewelleryType"
+                   value="@Model.Jewellery_Type" />
+        </div>
+    </div><br />
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="@Url.Action("Jewel","JewelTypeMst")" class="btn btn-danger">Cancel</a>
+</form>

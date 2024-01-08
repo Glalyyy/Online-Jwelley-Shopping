@@ -1,0 +1,30 @@
+﻿@model Jewelly.Models.StoneQltyMst
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+
+
+<div class="container-fluid editdeconproadd">
+    <h1 class="_goldh1" >Add New StoneQltyMst</h1>
+
+    <form action="/Admin/StoneQltyMst/Create" method="post"><br />
+
+        @Html.AntiForgeryToken()
+
+        <div class="form_product_add">
+            <table class="table _gold">
+                <tr>
+                    <th>StoneQltyMst: </th>
+                    <th><input type="text" class="form-control" name="StoneQlty" placeholder="" /></th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="submit" class="btn btn-light" name="Add" />
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>

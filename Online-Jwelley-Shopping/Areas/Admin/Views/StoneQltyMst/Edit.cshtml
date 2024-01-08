@@ -1,0 +1,25 @@
+﻿@model Jewelly.Models.StoneQltyMst
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h1 class="_goldh1">Edit</h1>
+<form action="/Admin/StoneQltyMst/Edit/@Model.StoneQlty_ID" method="post"><br />
+    <input type="hidden" name="StoneQlty_ID" value="@Model.StoneQlty_ID" />
+    <div class="row">
+        <div class="col-md-6">
+            <label for="StoneQlty">StoneQltyMst</label>
+            <input type="text"
+                   class="form-control"
+                   id="StoneQlty_Mst"
+                   name="StoneQlty"
+                   placeholder="StoneQlty"
+                   value="@Model.StoneQlty" />
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="@Url.Action("Stondqlt","StoneQltyMst")" class="btn btn-danger">Cancel</a>
+</form>
+

@@ -1,0 +1,126 @@
+﻿@model List<Jewelly.Models.GoldKrtMst>
+@{
+    ViewBag.Title = "Gold";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+    <link rel="stylesheet" href="@Url.Content("~/Areas/Admin/Content/Css/Admin.css")" type="text/css" />
+}
+<div class="container">
+    <h1 class="_goldh1">Welcom to  GoldKrtMst</h1>
+
+</div>
+<div>
+    @if (ViewBag.SuccessMg != null)
+    {
+        <div id="msgAlert" style="margin-left: 3em;" class="alert alert-success">
+            @ViewBag.SuccessMg
+        </div>
+    }
+    else if (ViewBag.ErrorMg != null)
+    {
+        <div id="msgsAlert" style="margin-left: 3em;" class="alert alert-danger">
+            @ViewBag.ErrorMg
+        </div>
+    }
+</div>
+<table>
+    <tr class="d-flex flex-row align-items-center flex-wrap" action="/Admin/GoldKrtMst/Gold">
+        <td colspan="2">
+            <a href="/Admin/GoldKrtMst/Create" class="mx-3 btn btn-warning text-center">+ Add Gold</a>
+        </td>
+        <td>
+            <input type="search"
+                   class="form-control mx-6"
+                   id="search"
+                   name="search"
+                   placeholder="search" />
+        </td>
+        <td>
+            <button type="submit" class="btn btn-primary mx-3">Go</button>
+        </td>
+
+    </tr>
+    <br />
+</table>
+<br />
+<div class="container _gold ">
+
+    <table class="table _gold">
+        <thead>
+
+            <tr>
+                <td>GoldType ID</td>
+                <td>GoldCrt</td>
+                <td>Edit</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.GoldType_ID </td>
+                    <td>@item.Gold_Crt</td>
+                    <td colspan="1">
+                        <a href="/Admin/GoldKrtMst/Edit/@item.GoldType_ID" class="btn btn-success text-center">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    setTimeout(function () {
+        $('#msgAlert').fadeOut('slow');
+        $('#msgsAlert').fadeOut('slow');
+    }, 2000);
+    console.log()
+
+    modeSwitch.addEventListener('click', () => {
+        if (body.classList.contains("dark-mode-variables")) {
+            modeText.innerText = "Dark Mode";
+        } else {
+            modeText.innerText = "Light Mode";
+        }
+        let mode = body.classList.toggle('dark-mode-variables');
+        // save mode
+        localStorage.setItem('darkmode', mode);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

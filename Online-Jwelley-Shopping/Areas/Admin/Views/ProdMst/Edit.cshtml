@@ -1,0 +1,25 @@
+﻿@model Jewelly.Models.ProdMst
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h1 class="_goldh1">Edit Product</h1>
+<form action="/Admin/ProdMst/Edit/@Model.Prod_ID" method="post"><br />
+    <input type="hidden" name="Prod_ID" value="@Model.Prod_ID" />
+    <div class="row">
+        <div class="col-md-6">
+            <label for="ProdType">Prod Type</label>
+            <input type="text"
+                   class="form-control"
+                   id="ProdType"
+                   name="Prod_Type"
+                   placeholder="ProdType"
+                   value="@Model.Prod_Type" />
+        </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="@Url.Action("Prod","ProdMst")" class="btn btn-danger">Cancel</a>
+</form>
+

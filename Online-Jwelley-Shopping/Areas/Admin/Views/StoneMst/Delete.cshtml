@@ -1,0 +1,55 @@
+﻿@model Jewelly.Models.StoneMst
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutPageAdmin.cshtml";
+}
+
+<h1 class="_goldh1">Delete StoneMst</h1>
+
+<form action="/Admin/StoneMst/Delete/@Model.Stone_ID" method="post"><br />
+    <input type="hidden" name="StoneID" value="@Model.Stone_ID" />
+    <table class="table _gold">
+        <tr>
+            <th>Stone ID</th>
+            <td>@Model.Stone_ID</td>
+        </tr>
+
+        <tr>
+            <th>Stone_Gm</th>
+            <td>@Model.Stone_Gm</td>
+        </tr>
+
+        <tr>
+            <th>Stone_Pcs</th>
+            <td>@Model.Stone_Pcs</td>
+        </tr>
+
+        <tr>
+            <th>Stone_Crt</th>
+            <td>@Model.Stone_Crt</td>
+        </tr>
+
+        <tr>
+            <th>Product</th>
+            <td>@Model.Stone_Rate</td>
+        </tr>
+        <tr>
+            <th>Stone_Amt</th>
+            <td>@Model.Stone_Amt</td>
+        </tr>
+        <tr>
+            <th>Style_Code</th>
+            <td>@Model.Style_Code</td>
+        </tr>
+        <tr>
+            <th>StoneQlty_ID</th>
+            <td>@Model.StoneQlty_ID</td>
+        </tr>
+
+    </table> <br />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("StoneMst","StoneMst")" class="btn btn-default">Cancel</a>
+</form>
+
+
